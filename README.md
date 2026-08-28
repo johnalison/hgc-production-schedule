@@ -13,9 +13,8 @@ dependencies — change a cycle time and the whole day reflows.
 ~/python-environments/webplot/bin/python make_schedule_figure.py scenario_6batches.yaml
 ~/python-environments/webplot/bin/python make_schedule_figure.py scenario_5batches.yaml
 ~/python-environments/webplot/bin/python make_schedule_figure.py scenario_4batches.yaml
-# reference reproduction + staffing experiment:
+# reference reproduction:
 ~/python-environments/webplot/bin/python make_schedule_figure.py schedule_config_baseline.yaml
-~/python-environments/webplot/bin/python make_schedule_figure.py scenario_3people.yaml
 ```
 
 (needs `yaml` + `playwright` for the PNG export — both live in the `webplot`
@@ -150,9 +149,6 @@ columns `cycle,minutes,batch`; empty batch = default for all batches):
   (Mon 8:00–18:30, 6 batches, peak 5 people); calibrated by measuring the
   reference image, matches it bar-for-bar
 - `baseline.svg` / `baseline.png` — rendered baseline
-- `scenario_3people.yaml` + renders — same day with peak staffing of 3
-  (gantry crew of 2 + one shared tech for OGP/wirebonder/encap/test):
-  downstream stations serialize, the test queue never runs, 33 jobs spill
 - `scenario_6batches.yaml` + renders — the working scenario: 6 batches on an
   extended 8:00–20:00 day, merged Gantry/OGP row, two-shift assembly crew with
   per-shift lunch breaks, dedicated wirebond/encap techs
