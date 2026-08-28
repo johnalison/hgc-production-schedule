@@ -21,6 +21,13 @@ dependencies — change a cycle time and the whole day reflows.
 (needs `yaml` + `playwright` for the PNG export — both live in the `webplot`
 environment; the SVG needs nothing beyond `yaml`.)
 
+Not on John's machine? Any Python ≥3.8 works:
+
+```sh
+pip install pyyaml playwright && playwright install chromium   # playwright only for PNG
+python make_schedule_figure.py scenario_6batches.yaml          # --no-png for SVG only
+```
+
 Each run prints the computed schedule (hatched carryover marked `*`) plus the
 jobs that spilled past the staffed window, and writes `<scenario>.svg` and
 `<scenario>.png`.
