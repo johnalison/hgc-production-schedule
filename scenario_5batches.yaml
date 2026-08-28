@@ -1,0 +1,156 @@
+# HGC module-production day schedule — 5-BATCH scenario
+# Baseline day but the gantry assembles only 5 batches (carryover for dropped batches removed automatically).
+#
+# Regenerate:
+#   ~/python-environments/webplot/bin/python make_schedule_figure.py scenario_5batches.yaml
+#
+# One file = one scenario. The schedule is computed from these assumptions by a
+# greedy forward scheduler — change a cycle time, shift, or the carryover list
+# and the whole day reflows.
+
+title: Monday — 5 batches/day
+subtitle: 8:00 AM–6:30 PM production window
+
+day:
+  start: "08:00"
+  end: "18:30"
+
+modules_per_batch: 4        # drawn as | | | tick marks on wirebond/encap/test bars
+
+# How many batches the gantry assembles today: keeps the first N of `batches`
+# below and drops carryover entries for removed batches. (CLI: --num-batches N)
+num_batches: 5
+
+# Today's assembly order (top row). Colors: pastel fills; hatch shade derived.
+batches:
+  - {name: Batch 1, color: "#8EC3F3"}
+  - {name: Batch 2, color: "#F1BB95"}
+  - {name: Batch 3, color: "#A4DDB2"}
+  - {name: Batch 4, color: "#EFAFCF"}
+  - {name: Batch 5, color: "#C5B0E9"}
+  - {name: Batch 6, color: "#94D0D1"}
+
+# Minutes per batch (of 4 modules). Per-batch override example:
+#   wb_front: {default: 60, Batch 3: 75}
+cycle_times_min:
+  gantry: 105
+  ogp: 45
+  wb_front: 60
+  wb_back: 45
+  encap_front: 60
+  encap_back: 45
+  test: 30
+
+# Who is on shift, and which stations they run. A job can only start if its
+# station's crew has enough free people for its whole duration.
+crews:
+  assembly:  {people: 2, shift: ["08:00", "18:30"]}   # both work the gantry together
+  bonding:   {people: 2, shift: ["08:00", "18:30"]}   # shared across wirebonder + encapsulation
+  metrology: {people: 1, shift: ["08:00", "16:00"]}   # OGP
+  testing:   {people: 1, shift: ["08:00", "16:00"]}   # test stand
+
+# Displayed "People on shift" step chart (an assumption, drawn as configured).
+# NOTE: in the reference illustration this shows 5 -> 3 at 4 PM even though the
+# crews above sum to 4 after 16:00 — kept as-is to match the reference.
+staffing:
+  label: People on shift
+  sublabel: peak 5 at once
+  steps:
+    - {from: "08:00", people: 5}
+    - {from: "16:00", people: 3}
+
+# Rows, top to bottom. The gray band spans the crew's staffed window.
+# cycle_keys maps this station's pass names to cycle_times_min entries.
+# label_style: batch -> "Batch 1"; pass -> "F1"/"B1"; initial -> "T1".
+stations:
+  - id: gantry
+    label: Gantry
+    sublabel: 2 people / day
+    crew: assembly
+    people_per_job: 2
+    cycle_keys: {assemble: gantry}
+    label_style: batch
+  - id: ogp
+    label: OGP
+    sublabel: 1 person / day
+    crew: metrology
+    cycle_keys: {ogp: ogp}
+    label_style: batch
+  - id: wirebonder
+    label: Wirebonder · shared
+    sublabel: 2 people / day
+    crew: bonding
+    cycle_keys: {F: wb_front, B: wb_back}
+    label_style: pass
+    module_ticks: true
+  - id: encapsulation
+    label: Encapsulation · shared
+    sublabel: 2 people / day
+    crew: bonding
+    cycle_keys: {F: encap_front, B: encap_back}
+    label_style: pass
+    module_ticks: true
+  - id: test
+    label: Test stand 1
+    sublabel: 1 person / day
+    crew: testing
+    cycle_keys: {T: test}
+    label_style: pass
+    module_ticks: true
+
+# Afternoon crew handoff marker (annotation only).
+handoff:
+  time: "13:15"
+  stations: [gantry, wirebonder, encapsulation]
+
+# Work created for each of today's batches (drawn solid).
+# `after: <station>` = wait for this batch's job at that station today.
+today_flow:
+  - {station: gantry, pass: assemble}
+  - {station: ogp, pass: ogp, after: gantry}
+  # backside bonding of a fresh batch must start by 5 PM, else it waits for morning
+  - {station: wirebonder, pass: B, after: gantry, start_by: "17:00"}
+  - {station: encapsulation, pass: B, after: wirebonder}
+
+# Prior-day / older WIP entering this morning's queues (drawn hatched).
+# Listed order = queue order at each station; carryover runs before today's
+# work unless marked `priority: late`. `after:` may reference another job by
+# station (+ pass, same batch) — e.g. frontside encapsulation follows this
+# morning's frontside wirebond of the same batch.
+carryover:
+  # OGP: batches 5 and 6 missed metrology yesterday (assembled after 4 PM)
+  - {station: ogp, batch: Batch 5, pass: ogp}
+  - {station: ogp, batch: Batch 6, pass: ogp}
+  # Wirebonder: frontside passes for yesterday's batches (backside cured overnight)
+  - {station: wirebonder, batch: Batch 4, pass: F}
+  - {station: wirebonder, batch: Batch 5, pass: F}
+  - {station: wirebonder, batch: Batch 6, pass: F}
+  - {station: wirebonder, batch: Batch 1, pass: F}
+  - {station: wirebonder, batch: Batch 2, pass: F}
+  # ... and backside passes 5/6 that spilled past yesterday's B-queue
+  - {station: wirebonder, batch: Batch 5, pass: B}
+  - {station: wirebonder, batch: Batch 6, pass: B}
+  # Batch 3 frontside is deliberately last (its encap runs first thing tomorrow)
+  - {station: wirebonder, batch: Batch 3, pass: F, priority: late}
+  # Encapsulation: backside of yesterday's Batch 2 spilled overnight; frontside
+  # encap chases this morning's frontside wirebonds; older backsides fill the
+  # afternoon.
+  - {station: encapsulation, batch: Batch 2, pass: B}
+  - {station: encapsulation, batch: Batch 3, pass: F}
+  - {station: encapsulation, batch: Batch 4, pass: F, after: {station: wirebonder, pass: F}}
+  - {station: encapsulation, batch: Batch 5, pass: F, after: {station: wirebonder, pass: F}}
+  - {station: encapsulation, batch: Batch 6, pass: F, after: {station: wirebonder, pass: F}}
+  - {station: encapsulation, batch: Batch 1, pass: F, after: {station: wirebonder, pass: F}}
+  - {station: encapsulation, batch: Batch 2, pass: F, after: {station: wirebonder, pass: F}}
+  - {station: encapsulation, batch: Batch 3, pass: B}
+  - {station: encapsulation, batch: Batch 4, pass: B}
+  - {station: encapsulation, batch: Batch 5, pass: B}
+  - {station: encapsulation, batch: Batch 6, pass: B}
+  # Test stand: fully-encapsulated older modules; each batch is released to
+  # test once its frontside wirebond finishes this morning.
+  - {station: test, batch: Batch 3, pass: T}
+  - {station: test, batch: Batch 4, pass: T, after: {station: wirebonder, pass: F}}
+  - {station: test, batch: Batch 5, pass: T, after: {station: wirebonder, pass: F}}
+  - {station: test, batch: Batch 6, pass: T, after: {station: wirebonder, pass: F}}
+  - {station: test, batch: Batch 1, pass: T, after: {station: wirebonder, pass: F}}
+  - {station: test, batch: Batch 2, pass: T, after: {station: wirebonder, pass: F}}

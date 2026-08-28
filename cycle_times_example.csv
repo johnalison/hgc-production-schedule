@@ -1,0 +1,9 @@
+cycle,minutes,batch
+gantry,105,
+ogp,45,
+wb_front,60,
+wb_back,45,
+encap_front,60,
+encap_back,45,
+test,30,
+wb_front,75,Batch 3

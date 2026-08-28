@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="524" viewBox="0 0 2000 524">
+<style>
+ text{font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+ .title{font-size:15px;font-weight:600;fill:#111827}
+ .subtitle{font-size:13px;fill:#6B7280}
+ .tick{font-size:13px;fill:#9CA3AF}
+ .stlabel{font-size:13.5px;fill:#111827;font-weight:500}
+ .stsub{font-size:12px;fill:#9CA3AF}
+ .barlabel{font-size:13px;fill:#1F2937;font-weight:500}
+ .barcode{font-size:12.5px;fill:#1F2937;font-weight:600}
+ .handoff{font-size:12px;fill:#9CA3AF}
+ .steplabel{font-size:12px;fill:#374151;font-weight:600}
+ .legend{font-size:12px;fill:#4B5563}
+ .legendb{font-size:10.5px;fill:#374151;font-weight:700}
+</style>
+<rect width="2000" height="524" fill="#FFFFFF"/>
+<defs>
+<pattern id="h0" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#8EC3F3"/><line x1="1.5" y1="0" x2="1.5" y2="8" stroke="#7CAAD3" stroke-width="3"/></pattern>
+<pattern id="h1" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#F1BB95"/><line x1="1.5" y1="0" x2="1.5" y2="8" stroke="#D2A382" stroke-width="3"/></pattern>
+<pattern id="h2" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#A4DDB2"/><line x1="1.5" y1="0" x2="1.5" y2="8" stroke="#8FC09B" stroke-width="3"/></pattern>
+<pattern id="h3" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#EFAFCF"/><line x1="1.5" y1="0" x2="1.5" y2="8" stroke="#D098B4" stroke-width="3"/></pattern>
+</defs>
+<text class="title" x="1077" y="16" text-anchor="middle">Monday — 4 batches/day</text>
+<text class="subtitle" x="1077" y="33" text-anchor="middle">8:00 AM–6:30 PM production window</text>
+<line x1="173.0" y1="64" x2="173.0" y2="454.0" stroke="#E7E7E7" stroke-width="1"/>
+<text class="tick" x="173" y="54" text-anchor="middle">8</text>
+<line x1="345.2" y1="64" x2="345.2" y2="454.0" stroke="#E7E7E7" stroke-width="1"/>
+<text class="tick" x="345" y="54" text-anchor="middle">9</text>
+<line x1="517.4" y1="64" x2="517.4" y2="454.0" stroke="#E7E7E7" stroke-width="1"/>
+<text class="tick" x="517" y="54" text-anchor="middle">10</text>
+<line x1="689.6" y1="64" x2="689.6" y2="454.0" stroke="#E7E7E7" stroke-width="1"/>
+<text class="tick" x="690" y="54" text-anchor="middle">11</text>
+<line x1="861.8" y1="64" x2="861.8" y2="454.0" stroke="#E7E7E7" stroke-width="1"/>
+<text class="tick" x="862" y="54" text-anchor="middle">12</text>
+<line x1="1034.0" y1="64" x2="1034.0" y2="454.0" stroke="#E7E7E7" stroke-width="1"/>
+<text class="tick" x="1034" y="54" text-anchor="middle">1</text>
+<line x1="1206.1" y1="64" x2="1206.1" y2="454.0" stroke="#E7E7E7" stroke-width="1"/>
+<text class="tick" x="1206" y="54" text-anchor="middle">2</text>
+<line x1="1378.3" y1="64" x2="1378.3" y2="454.0" stroke="#E7E7E7" stroke-width="1"/>
+<text class="tick" x="1378" y="54" text-anchor="middle">3</text>
+<line x1="1550.5" y1="64" x2="1550.5" y2="454.0" stroke="#E7E7E7" stroke-width="1"/>
+<text class="tick" x="1551" y="54" text-anchor="middle">4</text>
+<line x1="1722.7" y1="64" x2="1722.7" y2="454.0" stroke="#E7E7E7" stroke-width="1"/>
+<text class="tick" x="1723" y="54" text-anchor="middle">5</text>
+<line x1="1894.9" y1="64" x2="1894.9" y2="454.0" stroke="#E7E7E7" stroke-width="1"/>
+<text class="tick" x="1895" y="54" text-anchor="middle">6</text>
+<line x1="1981.0" y1="64" x2="1981.0" y2="454.0" stroke="#E7E7E7" stroke-width="1"/>
+<text class="tick" x="1981" y="54" text-anchor="middle">6:30</text>
+<rect x="173.0" y="76.0" width="1808.0" height="49.0" rx="6" fill="#F2F2F2"/>
+<text class="stlabel" x="10" y="98">Gantry</text>
+<text class="stsub" x="10" y="114">2 people / day</text>
+<rect x="173.0" y="133.5" width="1377.5" height="49.0" rx="6" fill="#F2F2F2"/>
+<text class="stlabel" x="10" y="156">OGP</text>
+<text class="stsub" x="10" y="172">1 person / day</text>
+<rect x="173.0" y="191.0" width="1808.0" height="49.0" rx="6" fill="#F2F2F2"/>
+<text class="stlabel" x="10" y="214">Wirebonder · shared</text>
+<text class="stsub" x="10" y="230">2 people / day</text>
+<rect x="173.0" y="248.5" width="1808.0" height="49.0" rx="6" fill="#F2F2F2"/>
+<text class="stlabel" x="10" y="271">Encapsulation · shared</text>
+<text class="stsub" x="10" y="287">2 people / day</text>
+<rect x="173.0" y="306.0" width="1377.5" height="49.0" rx="6" fill="#F2F2F2"/>
+<text class="stlabel" x="10" y="328">Test stand 1</text>
+<text class="stsub" x="10" y="344">1 person / day</text>
+<rect x="174.5" y="202.0" width="169.2" height="27.0" rx="7.0" fill="url(#h3)"/>
+<line x1="216.8" y1="203.5" x2="216.8" y2="227.5" stroke="#D098B4" stroke-width="1.8"/>
+<line x1="259.1" y1="203.5" x2="259.1" y2="227.5" stroke="#D098B4" stroke-width="1.8"/>
+<line x1="301.4" y1="203.5" x2="301.4" y2="227.5" stroke="#D098B4" stroke-width="1.8"/>
+<text class="barcode" x="259.1" y="220.0" text-anchor="middle">F4</text>
+<rect x="346.7" y="202.0" width="169.2" height="27.0" rx="7.0" fill="url(#h0)"/>
+<line x1="389.0" y1="203.5" x2="389.0" y2="227.5" stroke="#7CAAD3" stroke-width="1.8"/>
+<line x1="431.3" y1="203.5" x2="431.3" y2="227.5" stroke="#7CAAD3" stroke-width="1.8"/>
+<line x1="473.6" y1="203.5" x2="473.6" y2="227.5" stroke="#7CAAD3" stroke-width="1.8"/>
+<text class="barcode" x="431.3" y="220.0" text-anchor="middle">F1</text>
+<rect x="518.9" y="202.0" width="169.2" height="27.0" rx="7.0" fill="url(#h1)"/>
+<line x1="561.2" y1="203.5" x2="561.2" y2="227.5" stroke="#D2A382" stroke-width="1.8"/>
+<line x1="603.5" y1="203.5" x2="603.5" y2="227.5" stroke="#D2A382" stroke-width="1.8"/>
+<line x1="645.8" y1="203.5" x2="645.8" y2="227.5" stroke="#D2A382" stroke-width="1.8"/>
+<text class="barcode" x="603.5" y="220.0" text-anchor="middle">F2</text>
+<rect x="949.4" y="202.0" width="169.2" height="27.0" rx="7.0" fill="url(#h2)"/>
+<line x1="991.7" y1="203.5" x2="991.7" y2="227.5" stroke="#8FC09B" stroke-width="1.8"/>
+<line x1="1034.0" y1="203.5" x2="1034.0" y2="227.5" stroke="#8FC09B" stroke-width="1.8"/>
+<line x1="1076.2" y1="203.5" x2="1076.2" y2="227.5" stroke="#8FC09B" stroke-width="1.8"/>
+<text class="barcode" x="1034.0" y="220.0" text-anchor="middle">F3</text>
+<rect x="174.5" y="259.5" width="126.1" height="27.0" rx="7.0" fill="url(#h1)"/>
+<line x1="206.0" y1="261.0" x2="206.0" y2="285.0" stroke="#D2A382" stroke-width="1.8"/>
+<line x1="237.6" y1="261.0" x2="237.6" y2="285.0" stroke="#D2A382" stroke-width="1.8"/>
+<line x1="269.1" y1="261.0" x2="269.1" y2="285.0" stroke="#D2A382" stroke-width="1.8"/>
+<text class="barcode" x="237.6" y="277.5" text-anchor="middle">B2</text>
+<rect x="303.6" y="259.5" width="169.2" height="27.0" rx="7.0" fill="url(#h2)"/>
+<line x1="345.9" y1="261.0" x2="345.9" y2="285.0" stroke="#8FC09B" stroke-width="1.8"/>
+<line x1="388.2" y1="261.0" x2="388.2" y2="285.0" stroke="#8FC09B" stroke-width="1.8"/>
+<line x1="430.5" y1="261.0" x2="430.5" y2="285.0" stroke="#8FC09B" stroke-width="1.8"/>
+<text class="barcode" x="388.2" y="277.5" text-anchor="middle">F3</text>
+<rect x="475.8" y="259.5" width="169.2" height="27.0" rx="7.0" fill="url(#h3)"/>
+<line x1="518.1" y1="261.0" x2="518.1" y2="285.0" stroke="#D098B4" stroke-width="1.8"/>
+<line x1="560.4" y1="261.0" x2="560.4" y2="285.0" stroke="#D098B4" stroke-width="1.8"/>
+<line x1="602.7" y1="261.0" x2="602.7" y2="285.0" stroke="#D098B4" stroke-width="1.8"/>
+<text class="barcode" x="560.4" y="277.5" text-anchor="middle">F4</text>
+<rect x="648.0" y="259.5" width="169.2" height="27.0" rx="7.0" fill="url(#h0)"/>
+<line x1="690.3" y1="261.0" x2="690.3" y2="285.0" stroke="#7CAAD3" stroke-width="1.8"/>
+<line x1="732.6" y1="261.0" x2="732.6" y2="285.0" stroke="#7CAAD3" stroke-width="1.8"/>
+<line x1="774.9" y1="261.0" x2="774.9" y2="285.0" stroke="#7CAAD3" stroke-width="1.8"/>
+<text class="barcode" x="732.6" y="277.5" text-anchor="middle">F1</text>
+<rect x="820.2" y="259.5" width="169.2" height="27.0" rx="7.0" fill="url(#h1)"/>
+<line x1="862.5" y1="261.0" x2="862.5" y2="285.0" stroke="#D2A382" stroke-width="1.8"/>
+<line x1="904.8" y1="261.0" x2="904.8" y2="285.0" stroke="#D2A382" stroke-width="1.8"/>
+<line x1="947.1" y1="261.0" x2="947.1" y2="285.0" stroke="#D2A382" stroke-width="1.8"/>
+<text class="barcode" x="904.8" y="277.5" text-anchor="middle">F2</text>
+<rect x="992.4" y="259.5" width="126.1" height="27.0" rx="7.0" fill="url(#h2)"/>
+<line x1="1023.9" y1="261.0" x2="1023.9" y2="285.0" stroke="#8FC09B" stroke-width="1.8"/>
+<line x1="1055.5" y1="261.0" x2="1055.5" y2="285.0" stroke="#8FC09B" stroke-width="1.8"/>
+<line x1="1087.0" y1="261.0" x2="1087.0" y2="285.0" stroke="#8FC09B" stroke-width="1.8"/>
+<text class="barcode" x="1055.5" y="277.5" text-anchor="middle">B3</text>
+<rect x="1121.5" y="259.5" width="126.1" height="27.0" rx="7.0" fill="url(#h3)"/>
+<line x1="1153.1" y1="261.0" x2="1153.1" y2="285.0" stroke="#D098B4" stroke-width="1.8"/>
+<line x1="1184.6" y1="261.0" x2="1184.6" y2="285.0" stroke="#D098B4" stroke-width="1.8"/>
+<line x1="1216.2" y1="261.0" x2="1216.2" y2="285.0" stroke="#D098B4" stroke-width="1.8"/>
+<text class="barcode" x="1184.6" y="277.5" text-anchor="middle">B4</text>
+<rect x="174.5" y="317.0" width="83.1" height="27.0" rx="7.0" fill="url(#h2)"/>
+<line x1="195.3" y1="318.5" x2="195.3" y2="342.5" stroke="#8FC09B" stroke-width="1.8"/>
+<line x1="216.0" y1="318.5" x2="216.0" y2="342.5" stroke="#8FC09B" stroke-width="1.8"/>
+<line x1="236.8" y1="318.5" x2="236.8" y2="342.5" stroke="#8FC09B" stroke-width="1.8"/>
+<text class="barcode" x="216.0" y="335.0" text-anchor="middle">T3</text>
+<rect x="346.7" y="317.0" width="83.1" height="27.0" rx="7.0" fill="url(#h3)"/>
+<line x1="367.5" y1="318.5" x2="367.5" y2="342.5" stroke="#D098B4" stroke-width="1.8"/>
+<line x1="388.2" y1="318.5" x2="388.2" y2="342.5" stroke="#D098B4" stroke-width="1.8"/>
+<line x1="409.0" y1="318.5" x2="409.0" y2="342.5" stroke="#D098B4" stroke-width="1.8"/>
+<text class="barcode" x="388.2" y="335.0" text-anchor="middle">T4</text>
+<rect x="518.9" y="317.0" width="83.1" height="27.0" rx="7.0" fill="url(#h0)"/>
+<line x1="539.7" y1="318.5" x2="539.7" y2="342.5" stroke="#7CAAD3" stroke-width="1.8"/>
+<line x1="560.4" y1="318.5" x2="560.4" y2="342.5" stroke="#7CAAD3" stroke-width="1.8"/>
+<line x1="581.2" y1="318.5" x2="581.2" y2="342.5" stroke="#7CAAD3" stroke-width="1.8"/>
+<text class="barcode" x="560.4" y="335.0" text-anchor="middle">T1</text>
+<rect x="691.1" y="317.0" width="83.1" height="27.0" rx="7.0" fill="url(#h1)"/>
+<line x1="711.8" y1="318.5" x2="711.8" y2="342.5" stroke="#D2A382" stroke-width="1.8"/>
+<line x1="732.6" y1="318.5" x2="732.6" y2="342.5" stroke="#D2A382" stroke-width="1.8"/>
+<line x1="753.4" y1="318.5" x2="753.4" y2="342.5" stroke="#D2A382" stroke-width="1.8"/>
+<text class="barcode" x="732.6" y="335.0" text-anchor="middle">T2</text>
+<rect x="174.5" y="87.0" width="298.3" height="27.0" rx="7.0" fill="#8EC3F3"/>
+<text class="barlabel" x="323.7" y="105.0" text-anchor="middle">Batch 1</text>
+<rect x="475.8" y="144.5" width="126.1" height="27.0" rx="7.0" fill="#8EC3F3"/>
+<text class="barlabel" x="538.9" y="162.5" text-anchor="middle">Batch 1</text>
+<rect x="691.1" y="202.0" width="126.1" height="27.0" rx="7.0" fill="#8EC3F3"/>
+<line x1="722.6" y1="203.5" x2="722.6" y2="227.5" stroke="#7CAAD3" stroke-width="1.8"/>
+<line x1="754.1" y1="203.5" x2="754.1" y2="227.5" stroke="#7CAAD3" stroke-width="1.8"/>
+<line x1="785.7" y1="203.5" x2="785.7" y2="227.5" stroke="#7CAAD3" stroke-width="1.8"/>
+<text class="barcode" x="754.1" y="220.0" text-anchor="middle">B1</text>
+<rect x="1250.7" y="259.5" width="126.1" height="27.0" rx="7.0" fill="#8EC3F3"/>
+<line x1="1282.2" y1="261.0" x2="1282.2" y2="285.0" stroke="#7CAAD3" stroke-width="1.8"/>
+<line x1="1313.8" y1="261.0" x2="1313.8" y2="285.0" stroke="#7CAAD3" stroke-width="1.8"/>
+<line x1="1345.3" y1="261.0" x2="1345.3" y2="285.0" stroke="#7CAAD3" stroke-width="1.8"/>
+<text class="barcode" x="1313.8" y="277.5" text-anchor="middle">B1</text>
+<rect x="475.8" y="87.0" width="298.3" height="27.0" rx="7.0" fill="#F1BB95"/>
+<text class="barlabel" x="625.0" y="105.0" text-anchor="middle">Batch 2</text>
+<rect x="777.2" y="144.5" width="126.1" height="27.0" rx="7.0" fill="#F1BB95"/>
+<text class="barlabel" x="840.2" y="162.5" text-anchor="middle">Batch 2</text>
+<rect x="820.2" y="202.0" width="126.1" height="27.0" rx="7.0" fill="#F1BB95"/>
+<line x1="851.7" y1="203.5" x2="851.7" y2="227.5" stroke="#D2A382" stroke-width="1.8"/>
+<line x1="883.3" y1="203.5" x2="883.3" y2="227.5" stroke="#D2A382" stroke-width="1.8"/>
+<line x1="914.8" y1="203.5" x2="914.8" y2="227.5" stroke="#D2A382" stroke-width="1.8"/>
+<text class="barcode" x="883.3" y="220.0" text-anchor="middle">B2</text>
+<rect x="1379.8" y="259.5" width="126.1" height="27.0" rx="7.0" fill="#F1BB95"/>
+<line x1="1411.4" y1="261.0" x2="1411.4" y2="285.0" stroke="#D2A382" stroke-width="1.8"/>
+<line x1="1442.9" y1="261.0" x2="1442.9" y2="285.0" stroke="#D2A382" stroke-width="1.8"/>
+<line x1="1474.4" y1="261.0" x2="1474.4" y2="285.0" stroke="#D2A382" stroke-width="1.8"/>
+<text class="barcode" x="1442.9" y="277.5" text-anchor="middle">B2</text>
+<rect x="777.2" y="87.0" width="298.3" height="27.0" rx="7.0" fill="#A4DDB2"/>
+<text class="barlabel" x="926.3" y="105.0" text-anchor="middle">Batch 3</text>
+<rect x="1078.5" y="144.5" width="126.1" height="27.0" rx="7.0" fill="#A4DDB2"/>
+<text class="barlabel" x="1141.6" y="162.5" text-anchor="middle">Batch 3</text>
+<rect x="1121.5" y="202.0" width="126.1" height="27.0" rx="7.0" fill="#A4DDB2"/>
+<line x1="1153.1" y1="203.5" x2="1153.1" y2="227.5" stroke="#8FC09B" stroke-width="1.8"/>
+<line x1="1184.6" y1="203.5" x2="1184.6" y2="227.5" stroke="#8FC09B" stroke-width="1.8"/>
+<line x1="1216.2" y1="203.5" x2="1216.2" y2="227.5" stroke="#8FC09B" stroke-width="1.8"/>
+<text class="barcode" x="1184.6" y="220.0" text-anchor="middle">B3</text>
+<rect x="1509.0" y="259.5" width="126.1" height="27.0" rx="7.0" fill="#A4DDB2"/>
+<line x1="1540.5" y1="261.0" x2="1540.5" y2="285.0" stroke="#8FC09B" stroke-width="1.8"/>
+<line x1="1572.0" y1="261.0" x2="1572.0" y2="285.0" stroke="#8FC09B" stroke-width="1.8"/>
+<line x1="1603.6" y1="261.0" x2="1603.6" y2="285.0" stroke="#8FC09B" stroke-width="1.8"/>
+<text class="barcode" x="1572.0" y="277.5" text-anchor="middle">B3</text>
+<rect x="1078.5" y="87.0" width="298.3" height="27.0" rx="7.0" fill="#EFAFCF"/>
+<text class="barlabel" x="1227.7" y="105.0" text-anchor="middle">Batch 4</text>
+<rect x="1379.8" y="144.5" width="126.1" height="27.0" rx="7.0" fill="#EFAFCF"/>
+<text class="barlabel" x="1442.9" y="162.5" text-anchor="middle">Batch 4</text>
+<rect x="1379.8" y="202.0" width="126.1" height="27.0" rx="7.0" fill="#EFAFCF"/>
+<line x1="1411.4" y1="203.5" x2="1411.4" y2="227.5" stroke="#D098B4" stroke-width="1.8"/>
+<line x1="1442.9" y1="203.5" x2="1442.9" y2="227.5" stroke="#D098B4" stroke-width="1.8"/>
+<line x1="1474.4" y1="203.5" x2="1474.4" y2="227.5" stroke="#D098B4" stroke-width="1.8"/>
+<text class="barcode" x="1442.9" y="220.0" text-anchor="middle">B4</text>
+<line x1="1077.0" y1="74.0" x2="1077.0" y2="137.0" stroke="#B6BBC2" stroke-width="1.5" stroke-dasharray="2 3.5"/>
+<text class="handoff" x="1084.0" y="70.0">handoff</text>
+<line x1="1077.0" y1="189.0" x2="1077.0" y2="252.0" stroke="#B6BBC2" stroke-width="1.5" stroke-dasharray="2 3.5"/>
+<text class="handoff" x="1084.0" y="185.0">handoff</text>
+<line x1="1077.0" y1="246.5" x2="1077.0" y2="309.5" stroke="#B6BBC2" stroke-width="1.5" stroke-dasharray="2 3.5"/>
+<text class="handoff" x="1084.0" y="242.5">handoff</text>
+<path d="M 173.0 454.0 L 173.0 377.0 L 1550.5 377.0 L 1550.5 407.8 L 1981.0 407.8 L 1981.0 454.0 Z" fill="#CFE4FC" stroke="#7BAED5" stroke-width="1.2"/>
+<text class="steplabel" x="178.0" y="390.0">5</text>
+<text class="steplabel" x="1555.5" y="420.8">3</text>
+<text class="stlabel" x="10" y="414">People on shift</text>
+<text class="stsub" x="10" y="430">peak 5 at once</text>
+<rect x="8.0" y="496.0" width="12" height="12" rx="3" fill="#8EC3F3"/>
+<text class="legend" x="25.0" y="506.0">Batch 1</text>
+<rect x="87.5" y="496.0" width="12" height="12" rx="3" fill="#F1BB95"/>
+<text class="legend" x="104.5" y="506.0">Batch 2</text>
+<rect x="167.0" y="496.0" width="12" height="12" rx="3" fill="#A4DDB2"/>
+<text class="legend" x="184.0" y="506.0">Batch 3</text>
+<rect x="246.6" y="496.0" width="12" height="12" rx="3" fill="#EFAFCF"/>
+<text class="legend" x="263.6" y="506.0">Batch 4</text>
+<rect x="1358.4" y="496.0" width="12" height="12" rx="3" fill="#EFEFEF"/>
+<text class="legend" x="1375.4" y="506.0">staffed shift</text>
+<rect x="1474.0" y="496.0" width="12" height="12" rx="3" fill="url(#h0)"/>
+<text class="legend" x="1491.0" y="506.0">prior-day / older WIP</text>
+<rect x="1640.6" y="495.0" width="14" height="14" rx="3" fill="#EFEFEF"/>
+<text class="legendb" x="1647.6" y="506.0" text-anchor="middle">B</text>
+<text class="legend" x="1659.6" y="506.0">backside</text>
+<rect x="1726.5" y="495.0" width="14" height="14" rx="3" fill="#EFEFEF"/>
+<text class="legendb" x="1733.5" y="506.0" text-anchor="middle">F</text>
+<text class="legend" x="1745.5" y="506.0">frontside</text>
+<rect x="1818.7" y="496.0" width="20" height="12" rx="3" fill="#8EC3F3"/>
+<line x1="1823.7" y1="497.0" x2="1823.7" y2="507.0" stroke="#7CAAD3" stroke-width="1.5"/>
+<line x1="1828.7" y1="497.0" x2="1828.7" y2="507.0" stroke="#7CAAD3" stroke-width="1.5"/>
+<line x1="1833.7" y1="497.0" x2="1833.7" y2="507.0" stroke="#7CAAD3" stroke-width="1.5"/>
+<text class="legend" x="1843.7" y="506.0">four sequential modules</text>
+</svg>
